@@ -9,7 +9,7 @@ api_id = 38325876
 api_hash = '4159d8f4d17c6929d05416871d36ce18'
 phone = '+5546999250673'
 
-grupo_origem = '@rendaextrajaaa'
+grupo_origem = '@osprogramadores'
 grupo_destino = '@AcountMoney'
 
 LIMITE = 50
