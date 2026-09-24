@@ -2,6 +2,7 @@ import asyncio
 from telethon import TelegramClient
 from telethon.errors import FloodWaitError
 from telethon.tl.functions.channels import InviteToChannelRequest
+import time
 
 # CONFIGURAÇÕES
 api_id = 38325876
@@ -41,10 +42,6 @@ async def main():
     # Adicionar apenas quem não está no destino
     adicionados = 0
     for membro in membros_origem:
-        # Pula bots ou usuários deletados se necessário
-        if membro.bot or membro.deleted:
-            continue
-            
         if membro.id in membros_destino:
             print(f"⏭️ Pulando {membro.first_name or membro.id} (já está no destino)")
             continue
@@ -56,7 +53,7 @@ async def main():
         try:
             await client(InviteToChannelRequest(
                 channel=destino,
-                users=[membro]
+                users=[membro.id]
             ))
             print(f"✅ Adicionado: {membro.first_name or membro.id}")
             adicionados += 1
@@ -76,6 +73,5 @@ async def main():
     
     print(f"\n🏁 Finalizado! {adicionados} membros adicionados.")
 
-# Para compatibilidade com versões do Python 3.11+ e inferiores
-if __name__ == '__main__':
-    asyncio.run(main())
+with asyncio.Runner() as runner:
+    runner.run(main())
