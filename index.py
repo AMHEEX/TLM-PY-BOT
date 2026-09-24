@@ -12,7 +12,7 @@ phone = '+5546999250673'
 grupo_origem = '@osprogramadores'
 grupo_destino = '@AcountMoney'
 
-LIMITE = 250
+LIMITE = 1000
 TEMPO_ESPERA = 70
 
 async def main():
