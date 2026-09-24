@@ -13,7 +13,7 @@ grupo_origem = '@osprogramadores'
 grupo_destino = '@AcountMoney'
 
 LIMITE = 250
-TEMPO_ESPERA = 60
+TEMPO_ESPERA = 70
 
 async def main():
     client = TelegramClient('sessao', api_id, api_hash)
