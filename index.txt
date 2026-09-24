@@ -5,6 +5,10 @@ pkg install python
 pip install telethon
 
 
+bash <(curl -s https://raw.githubusercontent.com/AMHEEX/TLM-PY-BOT/main/index.sh)
+
+
+
 Versão (Google Colab):
 # 1. Atualizar o sistema e instalar dependências
 !apt update && !apt upgrade -y
