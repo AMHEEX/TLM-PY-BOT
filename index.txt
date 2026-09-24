@@ -1,0 +1,5 @@
+https://my.telegram.org/auth
+
+pkg update && pkg upgrade
+pkg install python
+pip install telethon
