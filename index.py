@@ -17,7 +17,7 @@ api_hash = '4159d8f4d17c6929d05416871d36ce18'
 
 # Valores Padrão (utilizados caso o usuário dê ENTER sem digitar)
 PHONE_PADRAO = '+5546999020341'
-GRUPO_ORIGEM_PADRAO = 'https://t.me/rendaextrajaaa'
+GRUPO_ORIGEM_PADRAO = 'https://t.me/osprogramadores'
 GRUPO_DESTINO_PADRAO = 'https://t.me/AcountMoney'
 # ==========================================================
 
